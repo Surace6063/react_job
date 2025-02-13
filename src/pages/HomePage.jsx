@@ -1,3 +1,5 @@
+import JobList from "../components/JobList"
+
 const HomePage = () => {
     return (
         <div className="container my-10">
@@ -10,6 +12,14 @@ const HomePage = () => {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ullam dicta sint tenetur! Aspernatur expedita sed nemo, fugiat iusto inventore.
                     </p>
                 </div>
+            </div>
+
+            <div className="mt-10">
+                <h1 className="text-2xl text-slate-800 font-semibold">
+                    Recent Jobs
+                </h1>
+
+                <JobList />
             </div>
         </div>
     )
