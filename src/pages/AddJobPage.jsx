@@ -1,10 +1,18 @@
+import axios from "axios"
 import { useForm } from "react-hook-form"
+import { useNavigate } from "react-router-dom"
 
 const AddJobPage = () => {
     const { register, handleSubmit } = useForm()
+    const navigate = useNavigate()
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = async (data) => {
+        try {
+            await axios.post('http://localhost:3000/jobs', data)
+            navigate('/')
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
