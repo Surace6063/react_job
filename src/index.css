@@ -7,3 +7,14 @@
 button {
   @apply py-2 px-4 rounded-md cursor-pointer;
 }
+
+label {
+  @apply block text-slate-800 font-semibold;
+}
+
+input,
+select,
+textarea {
+  @apply p-2 rounded-md border border-slate-300 focus:outline-none
+   focus:border-teal-500 w-full;
+}

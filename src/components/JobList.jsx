@@ -14,7 +14,8 @@ const JobList = () => {
     console.log(data);
 
     return (
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2
+        md:grid-cols-3 gap-4">
             {
                 isLoading ? <span>loading...</span> :
                     isError ? <span>Something went wrong!</span> :
